@@ -1,12 +1,15 @@
 {
   "name": "fvtestnft",
+  "homepage": "https://FreeVoicesDev.github.io/NFTTestV2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@thirdweb-dev/react": "^3",
@@ -21,6 +24,7 @@
     "@types/react": "^17.0.40",
     "eslint": "^8.11.0",
     "eslint-config-next": "^13",
+    "gh-pages": "^5.0.0",
     "typescript": "^4.6.2"
   }
 }
